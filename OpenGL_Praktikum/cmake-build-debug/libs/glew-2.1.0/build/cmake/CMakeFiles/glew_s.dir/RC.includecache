@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/libs/glew-2.1.0/build/glew.rc
+windows.h
+-
+
