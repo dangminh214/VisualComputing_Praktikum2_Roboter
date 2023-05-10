@@ -177,10 +177,61 @@ bool Scene::init()
                 3, 2, 7,
                 4, 0, 7
         };
+        static const float underLeftArmVertices[] =  {
 
+                -0.3, -0.4, -0.1, 0.5, 0, 1,
+                -0.3, -0.4, 0.1, 0.5, 0, 1,
+                -0.4, -0.4, 0.1, 0.5, 0, 1,
+                -0.4, -0.4, -0.1, 0.5, 0, 1,
+                -0.3, 0.0, -0.1, 0.5, 0, 1,
+                -0.3, 0.0, 0.1, 0.5, 0, 1,
+                -0.4, 0.0, 0.1, 0.5, 0, 1,
+                -0.4, 0.0, -0.1, 0.5, 0, 1,
+        };
 
+        static const int underLeftArmIndices[] = {
+                1, 2, 3,
+                7, 6, 5,
+                4, 5, 1,
+                5, 6, 2,
+                2, 6, 7,
+                0, 3, 7,
+                0, 1, 3,
+                4, 7, 5,
+                0, 4, 1,
+                1, 5, 2,
+                3, 2, 7,
+                4, 0, 7
+        };
 
-        //body Setup
+        static const float underRightArmVertices[] =  {
+
+                0.4, -0.4, -0.1, 0.5, 0, 1,
+                0.4, -0.4, 0.1, 0.5, 0, 1,
+                0.3, -0.4, 0.1, 0.5, 0, 1,
+                0.3, -0.4, -0.1, 0.5, 0, 1,
+                0.4, 0, -0.1, 0.5, 0, 1,
+                0.4, 0, 0.1, 0.5, 0, 1,
+                0.3, 0, 0.1, 0.5, 0, 1,
+                0.3, 0, -0.1, 0.5, 0, 1,
+        };
+
+        static const int underRightArmIndices[] = {
+                1, 2, 3,
+                7, 6, 5,
+                4, 5, 1,
+                5, 6, 2,
+                2, 6, 7,
+                0, 3, 7,
+                0, 1, 3,
+                4, 7, 5,
+                0, 4, 1,
+                1, 5, 2,
+                3, 2, 7,
+                4, 0, 7
+        };
+
+        //Body Setup
         glGenBuffers(1, &vboIDBody);
         glBindBuffer(GL_ARRAY_BUFFER, vboIDBody);
         glBufferData(GL_ARRAY_BUFFER, sizeof(bodyVertices), &bodyVertices, GL_STATIC_DRAW);
@@ -235,8 +286,8 @@ bool Scene::init()
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(leftLegIndices), leftLegIndices, GL_STATIC_DRAW);
 
         //right Leg Setup
-        glGenBuffers(1, &vboIDleftLeg);
-        glBindBuffer(GL_ARRAY_BUFFER, vboIDleftLeg);
+        glGenBuffers(1, &vboIDrightLeg);
+        glBindBuffer(GL_ARRAY_BUFFER, vboIDrightLeg);
         glBufferData(GL_ARRAY_BUFFER, sizeof(rightLegVertices), &rightLegVertices, GL_STATIC_DRAW);
 
         glGenVertexArrays(1, &vaoIDrightLeg);
@@ -288,6 +339,44 @@ bool Scene::init()
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, iboIDupperRightArm);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(upperRightArmIndices), upperRightArmIndices, GL_STATIC_DRAW);
 
+        //under Left Arm Setup
+        glGenBuffers(1, &vboIDunderLeftArm);
+        glBindBuffer(GL_ARRAY_BUFFER, vboIDunderLeftArm);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(underLeftArmVertices), &underLeftArmVertices, GL_STATIC_DRAW);
+
+        glGenVertexArrays(1, &vaoIDunderLeftArm);
+        glBindVertexArray(vaoIDunderLeftArm);
+
+        glVertexAttribPointer(0,3,GL_FLOAT, false, 6*sizeof(float),(void*)0);
+        glVertexAttribPointer(1, 3, GL_FLOAT, false, 6*sizeof(float), (void*)(3*sizeof(float)));
+
+        glEnableVertexAttribArray(0);
+        glEnableVertexAttribArray(1);
+
+        glGenBuffers(1, &iboIDunderLeftArm);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, iboIDunderLeftArm);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(underLeftArmIndices), underLeftArmIndices, GL_STATIC_DRAW);
+
+        //under Right Arm Setup
+        glGenBuffers(1, &vboIDunderRightArm);
+        glBindBuffer(GL_ARRAY_BUFFER, vboIDunderRightArm);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(underRightArmVertices), &underRightArmVertices, GL_STATIC_DRAW);
+
+        glGenVertexArrays(1, &vaoIDunderRightArm);
+        glBindVertexArray(vaoIDunderRightArm);
+
+        glVertexAttribPointer(0,3,GL_FLOAT, false, 6*sizeof(float),(void*)0);
+        glVertexAttribPointer(1, 3, GL_FLOAT, false, 6*sizeof(float), (void*)(3*sizeof(float)));
+
+        glEnableVertexAttribArray(0);
+        glEnableVertexAttribArray(1);
+
+        glGenBuffers(1, &iboIDunderRightArm);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, iboIDunderRightArm);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(underRightArmIndices), underRightArmIndices, GL_STATIC_DRAW);
+
+
+
         //unbind all
         glBindVertexArray(0);
         glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -313,6 +402,12 @@ void Scene::render(float dt)
     glClearColor(0.0, 0.0, 0.0, 0.0); // Set clear color to dark blue-gray
     glClear(GL_COLOR_BUFFER_BIT); // Clear the color buffer
 
+    // Calculate the model matrix for each part of the figure
+    glm::mat4 bodyModel = glm::translate(glm::vec3(0.0f, 0.0f, -2.0f)) * glm::rotate(glm::radians(45.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    glm::mat4 headModel = glm::translate(glm::vec3(0.0f, 1.2f, -2.0f)) * glm::rotate(glm::radians(30.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    glm::mat4 leftLegModel = glm::translate(glm::vec3(-0.2f, -0.6f, -2.0f)) * glm::rotate(glm::radians(-15.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    glm::mat4 rightLegModel = glm::translate(glm::vec3(0.2f, -0.6f, -2.0f)) * glm::rotate(glm::radians(15.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+
     //render Body
     glBindVertexArray(vaoIDBody);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
@@ -333,8 +428,16 @@ void Scene::render(float dt)
     glBindVertexArray(vaoIDupperLeftArm);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
-    //render upper Left Arm
+    //render upper Right Arm
     glBindVertexArray(vaoIDupperRightArm);
+    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
+
+    //render under Left Arm
+    glBindVertexArray(vaoIDunderLeftArm);
+    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
+
+    //render under Right Arm
+    glBindVertexArray(vaoIDunderRightArm);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
     glBindVertexArray(0); // unbind VAO

@@ -37,7 +37,12 @@ private:
     GLuint vaoIDrightLeg, vboIDrightLeg, iboIDrightLeg;
 
     GLuint vaoIDupperLeftArm, vboIDupperLeftArm, iboIDupperLeftArm;
+
     GLuint vaoIDupperRightArm, vboIDupperRightArm, iboIDupperRightArm;
+
+    GLuint vaoIDunderLeftArm, vboIDunderLeftArm, iboIDunderLeftArm;
+
+    GLuint vaoIDunderRightArm, vboIDunderRightArm, iboIDunderRightArm;
 
 };
 

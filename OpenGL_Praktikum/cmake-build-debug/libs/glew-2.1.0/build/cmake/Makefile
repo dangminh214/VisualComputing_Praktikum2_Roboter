@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum
+CMAKE_SOURCE_DIR = C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Pr
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -96,49 +96,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\CMakeFiles C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\glew-2.1.0\build\cmake\\CMakeFiles\progress.marks
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\CMakeFiles C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\glew-2.1.0\build\cmake\\CMakeFiles\progress.marks
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/clean
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/clean
 .PHONY : clean
 
 # The main clean target
@@ -147,22 +147,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/preinstall
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/preinstall
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/rule:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/rule
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/rule
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/rule
 
 # Convenience name for target.
@@ -171,12 +171,12 @@ glew: libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/rule
 
 # fast build rule for target.
 glew/fast:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build
 .PHONY : glew/fast
 
 # Convenience name for target.
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/rule:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/rule
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/rule
 .PHONY : libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/rule
 
 # Convenience name for target.
@@ -185,7 +185,7 @@ glew_s: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/rule
 
 # fast build rule for target.
 glew_s/fast:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build
 .PHONY : glew_s/fast
 
 __/__/src/glew.obj: __/__/src/glew.c.obj
@@ -193,8 +193,8 @@ __/__/src/glew.obj: __/__/src/glew.c.obj
 
 # target to build an object file
 __/__/src/glew.c.obj:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.obj
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.obj
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.obj
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.obj
 .PHONY : __/__/src/glew.c.obj
 
 __/__/src/glew.i: __/__/src/glew.c.i
@@ -202,8 +202,8 @@ __/__/src/glew.i: __/__/src/glew.c.i
 
 # target to preprocess a source file
 __/__/src/glew.c.i:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.i
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.i
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.i
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.i
 .PHONY : __/__/src/glew.c.i
 
 __/__/src/glew.s: __/__/src/glew.c.s
@@ -211,8 +211,8 @@ __/__/src/glew.s: __/__/src/glew.c.s
 
 # target to generate assembly for a file
 __/__/src/glew.c.s:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.s
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.s
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.s
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.s
 .PHONY : __/__/src/glew.c.s
 
 __/glew.obj: __/glew.rc.obj
@@ -220,8 +220,8 @@ __/glew.obj: __/glew.rc.obj
 
 # target to build an object file
 __/glew.rc.obj:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/glew.rc.obj
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/glew.rc.obj
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/glew.rc.obj
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\build.make libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/glew.rc.obj
 .PHONY : __/glew.rc.obj
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

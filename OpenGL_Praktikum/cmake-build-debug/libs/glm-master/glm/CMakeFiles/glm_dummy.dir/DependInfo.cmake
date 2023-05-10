@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/libs/glm-master/glm/detail/dummy.cpp" "libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.obj" "gcc" "libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.obj.d"
-  "C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/libs/glm-master/glm/detail/glm.cpp" "libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.obj" "gcc" "libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.obj.d"
+  "C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/libs/glm-master/glm/detail/dummy.cpp" "libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.obj" "gcc" "libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.obj.d"
+  "C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/libs/glm-master/glm/detail/glm.cpp" "libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.obj" "gcc" "libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.obj.d"
   )
 
 # Targets to which this target links.
