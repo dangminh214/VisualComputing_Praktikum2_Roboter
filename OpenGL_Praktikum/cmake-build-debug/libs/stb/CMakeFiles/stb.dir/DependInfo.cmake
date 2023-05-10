@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/libs/stb/stb_image.c" "libs/stb/CMakeFiles/stb.dir/stb_image.c.obj" "gcc" "libs/stb/CMakeFiles/stb.dir/stb_image.c.obj.d"
-  "C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/libs/stb/stb_image_write.c" "libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj" "gcc" "libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj.d"
+  "C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/libs/stb/stb_image.c" "libs/stb/CMakeFiles/stb.dir/stb_image.c.obj" "gcc" "libs/stb/CMakeFiles/stb.dir/stb_image.c.obj.d"
+  "C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/libs/stb/stb_image_write.c" "libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj" "gcc" "libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj.d"
   )
 
 # Targets to which this target links.

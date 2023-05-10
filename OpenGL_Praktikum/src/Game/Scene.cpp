@@ -401,12 +401,17 @@ void Scene::render(float dt)
 {
     glClearColor(0.0, 0.0, 0.0, 0.0); // Set clear color to dark blue-gray
     glClear(GL_COLOR_BUFFER_BIT); // Clear the color buffer
+    static float time = 0.0f;
 
     // Calculate the model matrix for each part of the figure
-    glm::mat4 bodyModel = glm::translate(glm::vec3(0.0f, 0.0f, -2.0f)) * glm::rotate(glm::radians(45.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    glm::mat4 headModel = glm::translate(glm::vec3(0.0f, 1.2f, -2.0f)) * glm::rotate(glm::radians(30.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    glm::mat4 leftLegModel = glm::translate(glm::vec3(-0.2f, -0.6f, -2.0f)) * glm::rotate(glm::radians(-15.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    glm::mat4 rightLegModel = glm::translate(glm::vec3(0.2f, -0.6f, -2.0f)) * glm::rotate(glm::radians(15.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+    float rotationSpeed = 45.0f;
+    float rotationAngleX = glm::radians(0 * time);
+    float rotationAngleY = glm::radians(90 * time);
+    float rotationAngleZ = glm::radians(0 * time);
+    Transform* bodyTransform = new Transform();
+
+    bodyTransform->rotate(glm::vec3(rotationAngleX, rotationAngleY, rotationAngleZ));
+    m_shader->setUniform("bodyTransformMatrix", bodyTransform->getMatrix(), false);
 
     //render Body
     glBindVertexArray(vaoIDBody);
@@ -441,6 +446,8 @@ void Scene::render(float dt)
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
     glBindVertexArray(0); // unbind VAO
+
+    time+=dt;
 }
 void Scene::update(float dt)
 {
@@ -480,6 +487,28 @@ void Scene::shutdown()
 {
     glDeleteVertexArrays(1, &vaoIDBody);
     glDeleteBuffers(1, &vboIDBody);
+
+    glDeleteVertexArrays(1, &vaoIDHead);
+    glDeleteBuffers(1, &vboIDHead);
+
+    glDeleteVertexArrays(1, &vaoIDupperLeftArm);
+    glDeleteBuffers(1, &vboIDupperLeftArm);
+
+    glDeleteVertexArrays(1, &vaoIDunderLeftArm);
+    glDeleteBuffers(1, &vboIDunderLeftArm);
+
+    glDeleteVertexArrays(1, &vaoIDupperRightArm);
+    glDeleteBuffers(1, &vboIDupperRightArm);
+
+    glDeleteVertexArrays(1, &vaoIDunderRightArm);
+    glDeleteBuffers(1, &vboIDunderRightArm);
+
+    glDeleteVertexArrays(1, &vaoIDleftLeg);
+    glDeleteBuffers(1, &vboIDleftLeg);
+
+    glDeleteVertexArrays(1, &vaoIDrightLeg);
+    glDeleteBuffers(1, &vboIDrightLeg);
+
 }
 
 

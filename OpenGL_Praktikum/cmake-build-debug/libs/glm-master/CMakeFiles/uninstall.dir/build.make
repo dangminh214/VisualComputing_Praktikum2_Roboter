@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum
+CMAKE_SOURCE_DIR = C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug
 
 # Utility rule file for uninstall.
 
@@ -66,7 +66,7 @@ include libs/glm-master/CMakeFiles/uninstall.dir/compiler_depend.make
 include libs/glm-master/CMakeFiles/uninstall.dir/progress.make
 
 libs/glm-master/CMakeFiles/uninstall:
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\glm-master && "C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -P C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/cmake-build-debug/libs/glm-master/cmake_uninstall.cmake
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\glm-master && "C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -P C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/cmake-build-debug/libs/glm-master/cmake_uninstall.cmake
 
 uninstall: libs/glm-master/CMakeFiles/uninstall
 uninstall: libs/glm-master/CMakeFiles/uninstall.dir/build.make
@@ -77,10 +77,10 @@ libs/glm-master/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : libs/glm-master/CMakeFiles/uninstall.dir/build
 
 libs/glm-master/CMakeFiles/uninstall.dir/clean:
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\glm-master && $(CMAKE_COMMAND) -P CMakeFiles\uninstall.dir\cmake_clean.cmake
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\glm-master && $(CMAKE_COMMAND) -P CMakeFiles\uninstall.dir\cmake_clean.cmake
 .PHONY : libs/glm-master/CMakeFiles/uninstall.dir/clean
 
 libs/glm-master/CMakeFiles/uninstall.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\libs\glm-master C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\glm-master C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\glm-master\CMakeFiles\uninstall.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\libs\glm-master C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\glm-master C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\glm-master\CMakeFiles\uninstall.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/glm-master/CMakeFiles/uninstall.dir/depend
 

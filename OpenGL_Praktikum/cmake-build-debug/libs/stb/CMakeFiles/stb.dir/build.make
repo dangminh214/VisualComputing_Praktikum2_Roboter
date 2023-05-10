@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\dangm\AppData\Local\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum
+CMAKE_SOURCE_DIR = C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include libs/stb/CMakeFiles/stb.dir/depend.make
@@ -69,32 +69,32 @@ include libs/stb/CMakeFiles/stb.dir/progress.make
 include libs/stb/CMakeFiles/stb.dir/flags.make
 
 libs/stb/CMakeFiles/stb.dir/stb_image.c.obj: libs/stb/CMakeFiles/stb.dir/flags.make
-libs/stb/CMakeFiles/stb.dir/stb_image.c.obj: C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/libs/stb/stb_image.c
+libs/stb/CMakeFiles/stb.dir/stb_image.c.obj: C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/libs/stb/stb_image.c
 libs/stb/CMakeFiles/stb.dir/stb_image.c.obj: libs/stb/CMakeFiles/stb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/stb/CMakeFiles/stb.dir/stb_image.c.obj"
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\Users\dangm\AppData\Local\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/stb/CMakeFiles/stb.dir/stb_image.c.obj -MF CMakeFiles\stb.dir\stb_image.c.obj.d -o CMakeFiles\stb.dir\stb_image.c.obj -c C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\libs\stb\stb_image.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/stb/CMakeFiles/stb.dir/stb_image.c.obj"
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/stb/CMakeFiles/stb.dir/stb_image.c.obj -MF CMakeFiles\stb.dir\stb_image.c.obj.d -o CMakeFiles\stb.dir\stb_image.c.obj -c C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\libs\stb\stb_image.c
 
 libs/stb/CMakeFiles/stb.dir/stb_image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/stb.dir/stb_image.c.i"
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\Users\dangm\AppData\Local\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\libs\stb\stb_image.c > CMakeFiles\stb.dir\stb_image.c.i
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\libs\stb\stb_image.c > CMakeFiles\stb.dir\stb_image.c.i
 
 libs/stb/CMakeFiles/stb.dir/stb_image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stb.dir/stb_image.c.s"
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\Users\dangm\AppData\Local\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\libs\stb\stb_image.c -o CMakeFiles\stb.dir\stb_image.c.s
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\libs\stb\stb_image.c -o CMakeFiles\stb.dir\stb_image.c.s
 
 libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj: libs/stb/CMakeFiles/stb.dir/flags.make
-libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj: C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/libs/stb/stb_image_write.c
+libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj: C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/libs/stb/stb_image_write.c
 libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj: libs/stb/CMakeFiles/stb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj"
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\Users\dangm\AppData\Local\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj -MF CMakeFiles\stb.dir\stb_image_write.c.obj.d -o CMakeFiles\stb.dir\stb_image_write.c.obj -c C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\libs\stb\stb_image_write.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj"
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj -MF CMakeFiles\stb.dir\stb_image_write.c.obj.d -o CMakeFiles\stb.dir\stb_image_write.c.obj -c C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\libs\stb\stb_image_write.c
 
 libs/stb/CMakeFiles/stb.dir/stb_image_write.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/stb.dir/stb_image_write.c.i"
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\Users\dangm\AppData\Local\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\libs\stb\stb_image_write.c > CMakeFiles\stb.dir\stb_image_write.c.i
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\libs\stb\stb_image_write.c > CMakeFiles\stb.dir\stb_image_write.c.i
 
 libs/stb/CMakeFiles/stb.dir/stb_image_write.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stb.dir/stb_image_write.c.s"
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\Users\dangm\AppData\Local\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\libs\stb\stb_image_write.c -o CMakeFiles\stb.dir\stb_image_write.c.s
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\libs\stb\stb_image_write.c -o CMakeFiles\stb.dir\stb_image_write.c.s
 
 # Object files for target stb
 stb_OBJECTS = \
@@ -108,19 +108,19 @@ libs/stb/libstb.a: libs/stb/CMakeFiles/stb.dir/stb_image.c.obj
 libs/stb/libstb.a: libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj
 libs/stb/libstb.a: libs/stb/CMakeFiles/stb.dir/build.make
 libs/stb/libstb.a: libs/stb/CMakeFiles/stb.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libstb.a"
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb && $(CMAKE_COMMAND) -P CMakeFiles\stb.dir\cmake_clean_target.cmake
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\stb.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libstb.a"
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb && $(CMAKE_COMMAND) -P CMakeFiles\stb.dir\cmake_clean_target.cmake
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\stb.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/stb/CMakeFiles/stb.dir/build: libs/stb/libstb.a
 .PHONY : libs/stb/CMakeFiles/stb.dir/build
 
 libs/stb/CMakeFiles/stb.dir/clean:
-	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb && $(CMAKE_COMMAND) -P CMakeFiles\stb.dir\cmake_clean.cmake
+	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb && $(CMAKE_COMMAND) -P CMakeFiles\stb.dir\cmake_clean.cmake
 .PHONY : libs/stb/CMakeFiles/stb.dir/clean
 
 libs/stb/CMakeFiles/stb.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\libs\stb C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb\CMakeFiles\stb.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\libs\stb C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb\CMakeFiles\stb.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/stb/CMakeFiles/stb.dir/depend
 
