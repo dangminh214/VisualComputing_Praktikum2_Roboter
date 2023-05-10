@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum
+CMAKE_SOURCE_DIR = C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,14 +131,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\CMakeFiles C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\libs\stb\\CMakeFiles\progress.marks
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/stb/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\CMakeFiles C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\libs\stb\\CMakeFiles\progress.marks
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/stb/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/stb/clean
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/stb/clean
 .PHONY : clean
 
 # The main clean target
@@ -147,22 +147,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/stb/preinstall
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/stb/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/stb/preinstall
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/stb/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/stb/CMakeFiles/stb.dir/rule:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/stb/CMakeFiles/stb.dir/rule
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/stb/CMakeFiles/stb.dir/rule
 .PHONY : libs/stb/CMakeFiles/stb.dir/rule
 
 # Convenience name for target.
@@ -171,7 +171,7 @@ stb: libs/stb/CMakeFiles/stb.dir/rule
 
 # fast build rule for target.
 stb/fast:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/build
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/build
 .PHONY : stb/fast
 
 stb_image.obj: stb_image.c.obj
@@ -179,7 +179,7 @@ stb_image.obj: stb_image.c.obj
 
 # target to build an object file
 stb_image.c.obj:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.obj
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.obj
 .PHONY : stb_image.c.obj
 
 stb_image.i: stb_image.c.i
@@ -187,7 +187,7 @@ stb_image.i: stb_image.c.i
 
 # target to preprocess a source file
 stb_image.c.i:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.i
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.i
 .PHONY : stb_image.c.i
 
 stb_image.s: stb_image.c.s
@@ -195,7 +195,7 @@ stb_image.s: stb_image.c.s
 
 # target to generate assembly for a file
 stb_image.c.s:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.s
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image.c.s
 .PHONY : stb_image.c.s
 
 stb_image_write.obj: stb_image_write.c.obj
@@ -203,7 +203,7 @@ stb_image_write.obj: stb_image_write.c.obj
 
 # target to build an object file
 stb_image_write.c.obj:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj
 .PHONY : stb_image_write.c.obj
 
 stb_image_write.i: stb_image_write.c.i
@@ -211,7 +211,7 @@ stb_image_write.i: stb_image_write.c.i
 
 # target to preprocess a source file
 stb_image_write.c.i:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.i
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.i
 .PHONY : stb_image_write.c.i
 
 stb_image_write.s: stb_image_write.c.s
@@ -219,7 +219,7 @@ stb_image_write.s: stb_image_write.c.s
 
 # target to generate assembly for a file
 stb_image_write.c.s:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.s
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\stb\CMakeFiles\stb.dir\build.make libs/stb/CMakeFiles/stb.dir/stb_image_write.c.s
 .PHONY : stb_image_write.c.s
 
 # Help Target
@@ -252,6 +252,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

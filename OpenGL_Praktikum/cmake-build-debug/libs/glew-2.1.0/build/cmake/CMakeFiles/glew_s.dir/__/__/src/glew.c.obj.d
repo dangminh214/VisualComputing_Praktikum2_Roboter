@@ -1,6 +1,6 @@
 libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.obj: \
- C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\libs\glew-2.1.0\src\glew.c \
- C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/libs/glew-2.1.0/include/GL/glew.h \
+ C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\libs\glew-2.1.0\src\glew.c \
+ C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/libs/glew-2.1.0/include/GL/glew.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/inttypes.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -13,7 +13,7 @@ libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
- C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/libs/glew-2.1.0/include/GL/wglew.h \
+ C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/libs/glew-2.1.0/include/GL/wglew.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/windows.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/excpt.h \

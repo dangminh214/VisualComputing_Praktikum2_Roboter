@@ -1,13 +1,13 @@
-if(NOT EXISTS "C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/cmake-build-debug/libs/glm-master/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/cmake-build-debug/libs/glm-master/install_manifest.txt")
-endif(NOT EXISTS "C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/cmake-build-debug/libs/glm-master/install_manifest.txt")
+if(NOT EXISTS "C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/cmake-build-debug/libs/glm-master/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/cmake-build-debug/libs/glm-master/install_manifest.txt")
+endif(NOT EXISTS "C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/cmake-build-debug/libs/glm-master/install_manifest.txt")
 
 if (NOT DEFINED CMAKE_INSTALL_PREFIX)
   set (CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/OpenGL_Praktikum")
 endif ()
  message(${CMAKE_INSTALL_PREFIX})
 
-file(READ "C:/Users/dangm/Documents/OpenGL_Praktikum_Framework/OpenGL_Praktikum/cmake-build-debug/libs/glm-master/install_manifest.txt" files)
+file(READ "C:/Users/dangm/Documents/VisualComputing_Praktikum2_Roboter/OpenGL_Praktikum/cmake-build-debug/libs/glm-master/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${file}")

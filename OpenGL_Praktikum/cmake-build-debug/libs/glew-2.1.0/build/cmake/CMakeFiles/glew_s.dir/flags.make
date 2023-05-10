@@ -11,7 +11,7 @@ C_FLAGS = -g -fdiagnostics-color=always -fno-builtin -fno-stack-protector
 
 RC_DEFINES = -DGLEW_NO_GLU -DGLEW_STATIC
 
-RC_INCLUDES = -I C:\Users\dangm\Documents\OpenGL_Praktikum_Framework\OpenGL_Praktikum\libs\glew-2.1.0\build\cmake\..\..\include
+RC_INCLUDES = -I C:\Users\dangm\Documents\VisualComputing_Praktikum2_Roboter\OpenGL_Praktikum\libs\glew-2.1.0\build\cmake\..\..\include
 
 RC_FLAGS = 
 

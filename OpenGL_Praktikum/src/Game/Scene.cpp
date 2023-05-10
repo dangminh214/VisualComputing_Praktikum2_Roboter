@@ -106,7 +106,7 @@ bool Scene::init()
                 0.1, -0.8, -0.1, 1, 1, 0,
                 0.2, -0.5, -0.1, 1, 0, 1,
                 0.2, -0.5, 0.1, 0, 1, 1,
-                0.2, -0.5, 0.1, 1, 1, 1,
+                0.1, -0.5, 0.1, 1, 1, 1,
                 0.1, -0.5, -0.1, 1, 1, 0
         };
         static const int rightLegIndices[] = {
@@ -417,6 +417,10 @@ void Scene::render(float dt)
     glBindVertexArray(vaoIDBody);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
+    Transform* headTransform = new Transform();
+
+    headTransform->rotate(glm::vec3(glm::radians(45.0f * time), glm::radians(45.0f * time), glm::radians(45.0f * time)));
+    m_shader->setUniform("headTransformMatrix", headTransform->getMatrix(), false);
     //render Head
     glBindVertexArray(vaoIDHead);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
