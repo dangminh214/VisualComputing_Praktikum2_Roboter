@@ -2,8 +2,8 @@
 
 
 Window::Window() :
-        OpenGLWindow(1280,				//width
-			720,				//height
+        OpenGLWindow(1600,				//width
+			900,				//height
 			false,				//fullscreen
 			false,				//vsync
 			4,					//OpenGL Version Major

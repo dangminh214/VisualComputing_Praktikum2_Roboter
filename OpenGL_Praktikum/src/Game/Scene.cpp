@@ -49,15 +49,15 @@ bool Scene::init()
 
         //Head
         static const float headVertices[] = {
-                0.1, 0.5, -0.1, 1, 0, 1,
+                0.1, 0.5, -0.1, 1, 1, 0,
                 0.1, 0.5, 0.1, 1,0,1,
-                -0.1, 0.5, 0.1, 1, 0, 1,
+                -0.1, 0.5, 0.1, 0, 0, 1,
                 -0.1, 0.5, -0.1, 1,0,1,
 
-                0.1, 0.8, -0.1, 1, 0, 1,
+                0.1, 0.8, -0.1, 0, 0, 1,
                 0.1, 0.8, 0.1, 1,0,1,
-                -0.1, 0.8, 0.1, 1, 0, 1,
-                -0.1, 0.8, -0.1, 1,0,1
+                -0.1, 0.8, 0.1, 0, 0, 1,
+                -0.1, 0.8, -0.1, 0.5,0.5,0.5
         };
         static const int headIndices[] = {
                 1, 2, 3,
@@ -127,12 +127,12 @@ bool Scene::init()
         static const float upperLeftArmVertices[] =  {
 
                 -0.3, 0, -0.1, 1, 1, 0,
-                -0.3, 0, 0.1, 1, 1, 0,
-                -0.4, 0, 0.1, 1, 1, 0,
-                -0.4, 0, -0.1, 1, 1, 0,
-                -0.3, 0.4, -0.1, 1, 1, 0,
-                -0.3, 0.4, 0.1, 1, 1, 0,
-                -0.4, 0.4, 0.1, 1, 1, 0,
+                -0.3, 0, 0.1, 1,0,1,
+                -0.4, 0, 0.1, 0, 0, 1,
+                -0.4, 0, -0.1, 1,0,1,
+                -0.3, 0.4, -0.1, 1, 0, 1,
+                -0.3, 0.4, 0.1, 0, 1, 1,
+                -0.4, 0.4, 0.1, 1, 1, 1,
                 -0.4, 0.4, -0.1, 1, 1, 0,
         };
 
@@ -153,14 +153,14 @@ bool Scene::init()
 
         static const float upperRightArmVertices[] =  {
 
-                0.4, 0, -0.1, 0, 0, 1,
-                0.4, 0, 0.1, 0, 0, 1,
+                0.4, 0, -0.1, 1, 1, 0,
+                0.4, 0, 0.1, 1,0,1,
                 0.3, 0, 0.1, 0, 0, 1,
-                0.3, 0, -0.1, 0, 0, 1,
-                0.4, 0.4, -0.1, 0, 0, 1,
-                0.4, 0.4, 0.1, 0, 0, 1,
-                0.3, 0.4, 0.1, 0, 0, 1,
-                0.3, 0.4, -0.1, 0, 0, 1
+                0.3, 0, -0.1, 1,0,1,
+                0.4, 0.4, -0.1, 1, 0, 1,
+                0.4, 0.4, 0.1, 0, 1, 1,
+                0.3, 0.4, 0.1, 1, 1, 1,
+                0.3, 0.4, -0.1, 1, 1, 0,
         };
 
         static const int upperRightArmIndices[] = {
@@ -179,14 +179,14 @@ bool Scene::init()
         };
         static const float underLeftArmVertices[] =  {
 
-                -0.3, -0.4, -0.1, 0.5, 0, 1,
+                -0.3, -0.4, -0.1, 0.5, 1, 0,
                 -0.3, -0.4, 0.1, 0.5, 0, 1,
-                -0.4, -0.4, 0.1, 0.5, 0, 1,
-                -0.4, -0.4, -0.1, 0.5, 0, 1,
-                -0.3, 0.0, -0.1, 0.5, 0, 1,
-                -0.3, 0.0, 0.1, 0.5, 0, 1,
+                -0.4, -0.4, 0.1, 0.5, 1, 0,
+                -0.4, -0.4, -0.1, 0, 0, 1,
+                -0.3, 0.0, -0.1, 0, 0, 1,
+                -0.3, 0.0, 0.1, 0.5, 1, 1,
                 -0.4, 0.0, 0.1, 0.5, 0, 1,
-                -0.4, 0.0, -0.1, 0.5, 0, 1,
+                -0.4, 0.0, -0.1, 1, 0, 0,
         };
 
         static const int underLeftArmIndices[] = {
@@ -206,14 +206,14 @@ bool Scene::init()
 
         static const float underRightArmVertices[] =  {
 
-                0.4, -0.4, -0.1, 0.5, 0, 1,
+                0.4, -0.4, -0.1, 0.5, 1, 1,
                 0.4, -0.4, 0.1, 0.5, 0, 1,
-                0.3, -0.4, 0.1, 0.5, 0, 1,
-                0.3, -0.4, -0.1, 0.5, 0, 1,
-                0.4, 0, -0.1, 0.5, 0, 1,
-                0.4, 0, 0.1, 0.5, 0, 1,
+                0.3, -0.4, 0.1, 0.5, 1, 0,
+                0.3, -0.4, -0.1, 0, 0, 1,
+                0.4, 0, -0.1, 0, 0, 1,
+                0.4, 0, 0.1, 0.5, 1, 1,
                 0.3, 0, 0.1, 0.5, 0, 1,
-                0.3, 0, -0.1, 0.5, 0, 1,
+                0.3, 0, -0.1, 1, 0, 1,
         };
 
         static const int underRightArmIndices[] = {
@@ -375,7 +375,9 @@ bool Scene::init()
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, iboIDunderRightArm);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(underRightArmIndices), underRightArmIndices, GL_STATIC_DRAW);
 
-
+        glEnable(GL_DEPTH_TEST);
+        glDepthFunc(GL_GREATER);
+        glClearDepth(0.0);
 
         //unbind all
         glBindVertexArray(0);
@@ -399,53 +401,83 @@ bool Scene::init()
 
 void Scene::render(float dt)
 {
+    glEnable(GL_DEPTH_TEST);
+    glDepthFunc(GL_ALWAYS);
     glClearColor(0.0, 0.0, 0.0, 0.0); // Set clear color to dark blue-gray
-    glClear(GL_COLOR_BUFFER_BIT); // Clear the color buffer
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
     static float time = 0.0f;
 
-    // Calculate the model matrix for each part of the figure
-    float rotationSpeed = 45.0f;
-    float rotationAngleX = glm::radians(0 * time);
-    float rotationAngleY = glm::radians(90 * time);
-    float rotationAngleZ = glm::radians(0 * time);
-    Transform* bodyTransform = new Transform();
+    Transform* totalTransform = new Transform();
+    //totalTransform->rotate(glm::vec3(glm::radians(0.0f), glm::radians(30.0f * time), glm::radians(0.0f)));
+    totalTransform->rotateAroundPoint(glm::vec3(0.0,0.0,0.0),glm::vec3(glm::radians(0.0f), glm::radians(30.0f * time), glm::radians(0.0f)));
 
-    bodyTransform->rotate(glm::vec3(rotationAngleX, rotationAngleY, rotationAngleZ));
-    m_shader->setUniform("bodyTransformMatrix", bodyTransform->getMatrix(), false);
+    m_shader->setUniform("totalTransformMatrix",  totalTransform->getMatrix(), false);
 
     //render Body
+    Transform* bodyTransform = new Transform();
+    //bodyTransform->rotate(glm::vec3(glm::radians(0.0f), glm::radians(15.0f), glm::radians(0.0f)));
+    m_shader->setUniform("bodyTransformMatrix", bodyTransform->getMatrix(), false);
+    m_shader->setUniform("objectType", 0 );
     glBindVertexArray(vaoIDBody);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
-    Transform* headTransform = new Transform();
-
-    headTransform->rotate(glm::vec3(glm::radians(45.0f * time), glm::radians(45.0f * time), glm::radians(45.0f * time)));
-    m_shader->setUniform("headTransformMatrix", headTransform->getMatrix(), false);
     //render Head
+    Transform* headTransform = new Transform();
+    headTransform->rotate(glm::vec3(0.0f, glm::radians(45.0f*time),0.0f) );
+    headTransform->translate(glm::vec3(0.0f, 0.1f*sin(time), 0.0f));
+    m_shader->setUniform("headTransformMatrix", headTransform->getMatrix(), false);
+    m_shader->setUniform("objectType", 1);
     glBindVertexArray(vaoIDHead);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
     //render Left Leg
+    Transform* leftLegTransform = new Transform();
+    //leftLegTransform->rotate(glm::vec3(glm::radians(0.0f), glm::radians(15.0f), glm::radians(0.0f)));
+    m_shader->setUniform("leftLegTransformMatrix", leftLegTransform->getMatrix(), false);
+    m_shader->setUniform("objectType", 2 );
     glBindVertexArray(vaoIDleftLeg);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
     //render Right Leg
+    Transform* rightLegTransform = new Transform();
+    //rightLegTransform->rotate(glm::vec3(glm::radians(0.0f), glm::radians(15.0f), glm::radians(0.0f)));
+    m_shader->setUniform("rightLegTransformMatrix", rightLegTransform->getMatrix(), false);
+    m_shader->setUniform("objectType", 3 );
     glBindVertexArray(vaoIDrightLeg);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
     //render upper Left Arm
+    Transform* upperLeftArmTransform = new Transform();
+    //upperLeftArmTransform->rotate(glm::vec3(glm::radians(0.0f), glm::radians(15.0f), glm::radians(0.0f)));
+    //upperLeftArmTransform->rotateAroundPoint();
+    m_shader->setUniform("upperLeftArmMatrix", upperLeftArmTransform->getMatrix(), false);
+    upperLeftArmTransform->rotateAroundPoint(glm::vec3(-0.3, 0.4, 0.1), glm::vec3(glm::radians(0.2), 0.0f, 0.0f));
+    m_shader->setUniform("objectType", 4 );
     glBindVertexArray(vaoIDupperLeftArm);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
     //render upper Right Arm
+    Transform* upperRightArmTransform = new Transform();
+    //upperRightArmTransform->rotate(glm::vec3(glm::radians(0.0f), glm::radians(15.0f), glm::radians(0.0f)));
+    m_shader->setUniform("upperRightArmMatrix", upperRightArmTransform->getMatrix(), false);
+    m_shader->setUniform("objectType", 5 );
     glBindVertexArray(vaoIDupperRightArm);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
     //render under Left Arm
+    Transform* underLeftArmTransform = new Transform();
+    //underLeftArmTransform->rotate(glm::vec3(glm::radians(0.0f), glm::radians(15.0f), glm::radians(0.0f)));
+    m_shader->setUniform("underLeftArmMatrix", underLeftArmTransform->getMatrix(), false);
+    m_shader->setUniform("objectType", 6 );
     glBindVertexArray(vaoIDunderLeftArm);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
     //render under Right Arm
+    Transform* underRightArmTransform = new Transform();
+    //underRightArmTransform->rotate(glm::vec3(glm::radians(0.0f), glm::radians(15.0f), glm::radians(0.0f)));
+    m_shader->setUniform("underRightArmMatrix", underRightArmTransform->getMatrix(), false);
+    m_shader->setUniform("objectType", 7 );
     glBindVertexArray(vaoIDunderRightArm);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
