@@ -412,7 +412,7 @@ void Scene::render(float dt)
     float negativeAngle = sin(time) * (-20.0f);
 
     Transform* totalTransform = new Transform();
-    totalTransform->rotate(glm::vec3(0.0, glm::radians(30.0f * time),0));
+    totalTransform->rotate(glm::vec3(0.0, glm::radians(30.0f * time ),0));
     m_shader->setUniform("totalTransformMatrix",  totalTransform->getMatrix(), false);
 
     //render Head
@@ -447,7 +447,7 @@ void Scene::render(float dt)
     //render upper Left Arm
     Transform* upperLeftArmTransform = new Transform();
     glm::quat upperLeftArmDeltaRot = glm::angleAxis(glm::radians(negativeAngle), glm::vec3(1.0f, 0.0f, 0.0f));
-    glm::vec3 upperLeftArmPivot = glm::vec3(0.35f, 0.4f, 0.0f);
+    glm::vec3 upperLeftArmPivot = glm::vec3(-0.35f, 0.4f, 0.0f);
     upperLeftArmTransform->rotateAroundPoint(upperLeftArmPivot, upperLeftArmDeltaRot);
     m_shader->setUniform("upperLeftArmMatrix", upperLeftArmTransform->getMatrix(), false);
     m_shader->setUniform("objectType", 4 );
@@ -456,6 +456,11 @@ void Scene::render(float dt)
 
     //render under Left Arm
     Transform* underLeftArmTransform = new Transform();
+    glm::quat underLeftArmDeltaRot = glm::angleAxis(glm::radians(negativeAngle*3), glm::vec3(1.0f, 0.0f, 0.0f));
+    glm::vec3 underLeftArmPivot = glm::vec3(-0.35f, 0.15f, 0.0f);
+
+    underLeftArmPivot = upperLeftArmTransform->getMatrix() * glm::vec4(underLeftArmPivot, 1.0f);
+    underLeftArmTransform->rotateAroundPoint(underLeftArmPivot, underLeftArmDeltaRot);
 
     m_shader->setUniform("underLeftArmMatrix", underLeftArmTransform->getMatrix(), false);
     m_shader->setUniform("objectType", 6 );
@@ -479,12 +484,12 @@ void Scene::render(float dt)
     glBindVertexArray(vaoIDupperRightArm);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
-
+    //under right arm
     Transform* underRightArmTransform = new Transform();
-    glm::quat underRightArmDeltaRot = glm::angleAxis(glm::radians(negativeAngle), glm::vec3(1.0f, 0.0f, 0.0f));
-    glm::vec3 underRightArmPivot = glm::vec3(3.5f, -0.4f, 0.0f);
+    glm::quat underRightArmDeltaRot = glm::angleAxis(glm::radians(positiveAngle*3), glm::vec3(1.0f, 0.0f, 0.0f));
+    glm::vec3 underRightArmPivot = glm::vec3(3.5f, 0.15f, 0.0f);
     underRightArmPivot = upperRightArmTransform->getMatrix() * glm::vec4(underRightArmPivot, 1.0f);
-    underRightArmTransform->rotateAroundPoint(underRightArmPivot, glm::vec3(-0.5f*sin(time), 0.0, 0.0));
+    underRightArmTransform->rotateAroundPoint(underRightArmPivot, underRightArmDeltaRot);
 
     m_shader->setUniform("underRightArmMatrix", underRightArmTransform->getMatrix(), false);
     m_shader->setUniform("objectType", 7 );
