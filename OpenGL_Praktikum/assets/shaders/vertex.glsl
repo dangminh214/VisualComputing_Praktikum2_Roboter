@@ -20,32 +20,28 @@ out vec3 colorVS;
 void main(){
         colorVS = colorRGB;
 
-        if (objectType == 0) // Body object
-        {
-                gl_Position = bodyTransformMatrix * totalTransformMatrix * vec4(pos, 1.0);
+        if (objectType == 0) {
+                gl_Position =  bodyTransformMatrix  * vec4(pos, 1.0) * totalTransformMatrix;
         }
-        if (objectType == 1) // Head object
-        {
-                gl_Position = headTransformMatrix * totalTransformMatrix * vec4(pos, 1.0);
+        if (objectType == 1) {
+                gl_Position =  headTransformMatrix  * vec4(pos, 1.0) * totalTransformMatrix;
         }
         if (objectType == 2) {
-                gl_Position = leftLegTransformMatrix *totalTransformMatrix * vec4(pos, 1.0);
+                gl_Position =  leftLegTransformMatrix * vec4(pos, 1.0)* totalTransformMatrix;
         }
         if (objectType == 3) {
-                gl_Position = rightLegTransformMatrix * totalTransformMatrix * vec4(pos, 1.0);
+                gl_Position =  rightLegTransformMatrix * vec4(pos, 1.0)* totalTransformMatrix;
         }
         if (objectType == 4) {
-                gl_Position = upperLeftArmMatrix * totalTransformMatrix * vec4(pos, 1.0);
+                gl_Position = upperLeftArmMatrix * vec4(pos, 1.0) * totalTransformMatrix;
         }
         if (objectType == 5) {
-                gl_Position = upperRightArmMatrix * totalTransformMatrix * vec4(pos, 1.0);
+                gl_Position = upperRightArmMatrix  * vec4(pos, 1.0) * totalTransformMatrix;
         }
         if (objectType == 6) {
-                gl_Position = underLeftArmMatrix * totalTransformMatrix * vec4(pos, 1.0);
+                gl_Position = underLeftArmMatrix * vec4(pos, 1.0) * totalTransformMatrix ;
         }
         if (objectType == 7) {
-                gl_Position = underRightArmMatrix * totalTransformMatrix * vec4(pos, 1.0);
+                gl_Position = underRightArmMatrix * vec4(pos, 1.0) * totalTransformMatrix;
         }
-
-        //gl_Position = transformMatrix * vec4(pos, 1.0);
 }

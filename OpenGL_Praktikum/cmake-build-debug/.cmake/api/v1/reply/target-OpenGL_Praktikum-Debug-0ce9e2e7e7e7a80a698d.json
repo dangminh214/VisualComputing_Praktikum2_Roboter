@@ -151,11 +151,11 @@
 	[
 		{
 			"backtrace" : 4,
-			"id" : "glfw::@3be6e5b4e7ef208431a5"
+			"id" : "glew_s::@717d470b011500e00557"
 		},
 		{
 			"backtrace" : 4,
-			"id" : "glew_s::@717d470b011500e00557"
+			"id" : "glfw::@3be6e5b4e7ef208431a5"
 		},
 		{
 			"backtrace" : 4,
