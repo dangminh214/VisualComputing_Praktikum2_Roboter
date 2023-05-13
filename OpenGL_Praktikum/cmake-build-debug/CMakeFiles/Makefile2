@@ -301,8 +301,8 @@ libs/stb/clean: libs/stb/CMakeFiles/stb.dir/clean
 # Target rules for target CMakeFiles/OpenGL_Praktikum.dir
 
 # All Build rule for target.
-CMakeFiles/OpenGL_Praktikum.dir/all: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/all
 CMakeFiles/OpenGL_Praktikum.dir/all: libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/all
+CMakeFiles/OpenGL_Praktikum.dir/all: libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/all
 CMakeFiles/OpenGL_Praktikum.dir/all: libs/stb/CMakeFiles/stb.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_Praktikum.dir\build.make CMakeFiles/OpenGL_Praktikum.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGL_Praktikum.dir\build.make CMakeFiles/OpenGL_Praktikum.dir/build

@@ -126,14 +126,14 @@ bool Scene::init()
 
         static const float upperLeftArmVertices[] =  {
 
-                -0.3, 0, -0.06, 1, 1, 0,
-                -0.3, 0, 0.06, 1,0,1,
-                -0.4, 0, 0.06, 0, 0, 1,
-                -0.4, 0, -0.06, 1,0,1,
-                -0.3, 0.4, -0.06, 1, 0, 1,
-                -0.3, 0.4, 0.06, 0, 1, 1,
-                -0.4, 0.4, 0.06, 1, 1, 1,
-                -0.4, 0.4, -0.06, 1, 1, 0,
+                -0.25, 0, -0.06, 1, 1, 0,
+                -0.25, 0, 0.06, 1,0,1,
+                -0.35, 0, 0.06, 0, 0, 1,
+                -0.35, 0, -0.06, 1,0,1,
+                -0.25, 0.4, -0.06, 1, 0, 1,
+                -0.25, 0.4, 0.06, 0, 1, 1,
+                -0.35, 0.4, 0.06, 1, 1, 1,
+                -0.35, 0.4, -0.06, 1, 1, 0,
         };
 
         static const int upperLeftArmIndices[] = {
@@ -153,14 +153,14 @@ bool Scene::init()
 
         static const float upperRightArmVertices[] =  {
 
-                0.4, 0, -0.06, 1, 1, 0,
-                0.4, 0, 0.06, 1,0,1,
-                0.3, 0, 0.06, 0, 0, 1,
-                0.3, 0, -0.06, 1,0,1,
-                0.4, 0.4, -0.06, 1, 0, 1,
-                0.4, 0.4, 0.06, 0, 1, 1,
-                0.3, 0.4, 0.06, 1, 1, 1,
-                0.3, 0.4, -0.06, 1, 1, 0,
+                0.35, 0, -0.06, 1, 1, 0,
+                0.35, 0, 0.06, 1,0,1,
+                0.25, 0, 0.06, 0, 0, 1,
+                0.25, 0, -0.06, 1,0,1,
+                0.35, 0.4, -0.06, 1, 0, 1,
+                0.35, 0.4, 0.06, 0, 1, 1,
+                0.25, 0.4, 0.06, 1, 1, 1,
+                0.25, 0.4, -0.06, 1, 1, 0,
         };
 
         static const int upperRightArmIndices[] = {
@@ -179,14 +179,14 @@ bool Scene::init()
         };
         static const float underLeftArmVertices[] =  {
 
-                -0.3, -0.35, -0.06, 0.5, 1, 0,
-                -0.3, -0.35, 0.06, 0.5, 0, 1,
-                -0.4, -0.35, 0.06, 0.5, 1, 0,
-                -0.4, -0.35, -0.06, 0, 0, 1,
-                -0.3, -0.05, -0.06, 0, 0, 1,
-                -0.3, -0.05, 0.06, 0.5, 1, 1,
-                -0.4, -0.05, 0.06, 0.5, 0, 1,
-                -0.4, -0.05, -0.06, 1, 0, 0,
+                -0.25, -0.35, -0.06, 0.5, 1, 0,
+                -0.25, -0.35, 0.06, 0.5, 0, 1,
+                -0.35, -0.35, 0.06, 0.5, 1, 0,
+                -0.35, -0.35, -0.06, 0, 0, 1,
+                -0.25, -0.05, -0.06, 0, 0, 1,
+                -0.25, -0.05, 0.06, 0.5, 1, 1,
+                -0.35, -0.05, 0.06, 0.5, 0, 1,
+                -0.35, -0.05, -0.06, 1, 0, 0,
         };
 
         static const int underLeftArmIndices[] = {
@@ -206,14 +206,14 @@ bool Scene::init()
 
         static const float underRightArmVertices[] =  {
 
-                0.4, -0.35, -0.06, 0.5, 1, 1,
-                0.4, -0.35, 0.06, 0.5, 0, 1,
-                0.3, -0.35, 0.06, 0.5, 1, 0,
-                0.3, -0.35, -0.06, 0, 0, 1,
-                0.4, -0.05, -0.06, 0, 0, 1,
-                0.4, -0.05, 0.06, 0.5, 1, 1,
-                0.3, -0.05, 0.06, 0.5, 0, 1,
-                0.3, -0.05, -0.06, 1, 0, 1,
+                0.35, -0.35, -0.06, 0.5, 1, 1,
+                0.35, -0.35, 0.06, 0.5, 0, 1,
+                0.25, -0.35, 0.06, 0.5, 1, 0,
+                0.25, -0.35, -0.06, 0, 0, 1,
+                0.35, -0.05, -0.06, 0, 0, 1,
+                0.35, -0.05, 0.06, 0.5, 1, 1,
+                0.25, -0.05, 0.06, 0.5, 0, 1,
+                0.25, -0.05, -0.06, 1, 0, 1,
         };
 
         static const int underRightArmIndices[] = {
@@ -447,7 +447,7 @@ void Scene::render(float dt)
     //render upper Left Arm
     Transform* upperLeftArmTransform = new Transform();
     glm::quat upperLeftArmDeltaRot = glm::angleAxis(glm::radians(negativeAngle), glm::vec3(1.0f, 0.0f, 0.0f));
-    glm::vec3 upperLeftArmPivot = glm::vec3(-0.35f, 0.4f, 0.0f);
+    glm::vec3 upperLeftArmPivot = glm::vec3(-0.3f, 0.4f, 0.0f);
     upperLeftArmTransform->rotateAroundPoint(upperLeftArmPivot, upperLeftArmDeltaRot);
     m_shader->setUniform("upperLeftArmMatrix", upperLeftArmTransform->getMatrix(), false);
     m_shader->setUniform("objectType", 4 );
@@ -457,7 +457,7 @@ void Scene::render(float dt)
     //render under Left Arm
     Transform* underLeftArmTransform = new Transform();
     glm::quat underLeftArmDeltaRot = glm::angleAxis(glm::radians(negativeAngle*3), glm::vec3(1.0f, 0.0f, 0.0f));
-    glm::vec3 underLeftArmPivot = glm::vec3(-0.35f, 0.15f, 0.0f);
+    glm::vec3 underLeftArmPivot = glm::vec3(-0.3f, 0.15f, 0.0f);
 
     underLeftArmPivot = upperLeftArmTransform->getMatrix() * glm::vec4(underLeftArmPivot, 1.0f);
     underLeftArmTransform->rotateAroundPoint(underLeftArmPivot, underLeftArmDeltaRot);
@@ -477,7 +477,7 @@ void Scene::render(float dt)
     //render upper Right Arm
     Transform* upperRightArmTransform = new Transform();
     glm::quat upperRightArmDeltaRot = glm::angleAxis(glm::radians(positiveAngle), glm::vec3(1.0f, 0.0f, 0.0f));
-    glm::vec3 upperRightArmPivot = glm::vec3(0.35f, 0.4f, 0.0f);
+    glm::vec3 upperRightArmPivot = glm::vec3(0.3f, 0.4f, 0.0f);
     upperRightArmTransform->rotateAroundPoint(upperRightArmPivot, upperRightArmDeltaRot);
     m_shader->setUniform("upperRightArmMatrix", upperRightArmTransform->getMatrix(), false);
     m_shader->setUniform("objectType", 5 );
@@ -487,7 +487,7 @@ void Scene::render(float dt)
     //under right arm
     Transform* underRightArmTransform = new Transform();
     glm::quat underRightArmDeltaRot = glm::angleAxis(glm::radians(positiveAngle*3), glm::vec3(1.0f, 0.0f, 0.0f));
-    glm::vec3 underRightArmPivot = glm::vec3(3.5f, 0.15f, 0.0f);
+    glm::vec3 underRightArmPivot = glm::vec3(0.3f, 0.15f, 0.0f);
     underRightArmPivot = upperRightArmTransform->getMatrix() * glm::vec4(underRightArmPivot, 1.0f);
     underRightArmTransform->rotateAroundPoint(underRightArmPivot, underRightArmDeltaRot);
 
@@ -496,9 +496,18 @@ void Scene::render(float dt)
     glBindVertexArray(vaoIDunderRightArm);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
-    glBindVertexArray(0); // unbind VAO
-
     time+=dt;
+
+    //Color change per frame
+    float red = sin(time * 1.0f) ;
+    float green = sin(time * 2.0f) + 1.0f;
+    float blue = sin(time * 3.0f) + 0.5f;
+    glm::vec3 color(red, green, blue);
+
+    m_shader->setUniform("color", color);
+    m_shader->setUniform("time", time);
+
+    glBindVertexArray(0); // unbind VAO
 }
 void Scene::update(float dt)
 {
