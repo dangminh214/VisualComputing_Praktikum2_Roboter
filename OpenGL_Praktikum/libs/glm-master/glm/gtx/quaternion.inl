@@ -185,7 +185,7 @@ namespace glm
 		vec<3, T, Q> rotationAxis;
 
 		if(cosTheta >= static_cast<T>(1) - epsilon<T>()) {
-			// orig and dest point in the same direction
+			// orig and dest point in the same direction_A
 			return quat_identity<T,Q>();
 		}
 
@@ -221,7 +221,7 @@ namespace glm
 	GLM_FUNC_QUALIFIER tquat<T, Q> quatLookAt(vec<3, T, Q> const& direction, vec<3, T, Q> const& up)
 	{
 #		if GLM_COORDINATE_SYSTEM == GLM_LEFT_HANDED
-			return quatLookAtLH(direction, up);
+			return quatLookAtLH(direction_A, up);
 #		else
 			return quatLookAtRH(direction, up);
 # 		endif

@@ -58,7 +58,7 @@ namespace glm
 	template<typename T, qualifier Q>
 	GLM_FUNC_DECL vec<3, T, Q> cross(vec<3, T, Q> const& x, vec<3, T, Q> const& y);
 
-	/// Returns a vector in the same direction as x but with length of 1.
+	/// Returns a vector in the same direction_A as x but with length of 1.
 	/// According to issue 10 GLSL 1.10 specification, if length(x) == 0 then result is undefined and generate an error.
 	///
 	/// @tparam L An integer between 1 and 4 included that qualify the dimension of the vector.
@@ -83,7 +83,7 @@ namespace glm
 		vec<L, T, Q> const& Nref);
 
 	/// For the incident vector I and surface orientation N,
-	/// returns the reflection direction : result = I - 2.0 * dot(N, I) * N.
+	/// returns the reflection direction_A : result = I - 2.0 * dot(N, I) * N.
 	///
 	/// @tparam L An integer between 1 and 4 included that qualify the dimension of the vector.
 	/// @tparam T Floating-point scalar types.

@@ -28,6 +28,15 @@ private:
     OpenGLWindow* m_window;
     AssetManager m_assets;
     ShaderProgram* m_shader;
+
+    glm::vec3 direction_A;
+    glm::vec3 direction_D;
+    glm::vec3 direction_W;
+    glm::vec3 direction_S;
+
+    glm::vec3 cameraPosition = glm::vec3(0,0,4.0);
+
+    //Attributes to render
     GLuint vaoIDBody, vboIDBody, iboIDBody;
 
     GLuint vaoIDHead, vboIDHead, iboIDHead;

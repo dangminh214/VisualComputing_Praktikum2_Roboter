@@ -35,7 +35,7 @@ namespace glm
 	/// @{
 
 	//! Compute the intersection of a ray and a plane.
-	//! Ray direction and plane normal must be unit length.
+	//! Ray direction_A and plane normal must be unit length.
 	//! From GLM_GTX_intersect extension.
 	template<typename genType>
 	GLM_FUNC_DECL bool intersectRayPlane(
@@ -61,7 +61,7 @@ namespace glm
 		genType & position);
 
 	//! Compute the intersection distance of a ray and a sphere.
-	//! The ray direction vector is unit length.
+	//! The ray direction_A vector is unit length.
 	//! From GLM_GTX_intersect extension.
 	template<typename genType>
 	GLM_FUNC_DECL bool intersectRaySphere(

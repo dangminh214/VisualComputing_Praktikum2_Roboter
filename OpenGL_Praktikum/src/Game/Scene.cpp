@@ -401,9 +401,28 @@ bool Scene::init()
 
 void Scene::render(float dt)
 {
+    //Create Camera
+    glm::vec3 targetPosition = glm::vec3(0.0f, 0.0f, 0.0f);
+    glm::vec3 upVector = glm::vec3(0.0f, 1.0f, 0.0f);
+
+    glm::mat4 viewMatrix = glm::mat4(1.0f);
+
+    //Create Projection
+    float fieldOfView = glm::radians(90.0f); // Vertical field of view in degrees
+    float aspectRatio = 16 / 9; // Screen aspect ratio (width / height)
+    float nearPlane = 1.0f; // Near clipping plane
+    float farPlane = 10.0f; // Far clipping plane
+
+    glm::mat4 projectionMatrix =glm::mat4(1.0f);
+    viewMatrix = glm::lookAt(cameraPosition, targetPosition, upVector);
+    projectionMatrix = glm::perspective(fieldOfView, aspectRatio, nearPlane, farPlane);
+
+    m_shader->setUniform("viewMatrix", viewMatrix, false);
+    m_shader->setUniform("projectionMatrix", projectionMatrix, false);
+
     glEnable(GL_DEPTH_TEST);
-    glDepthFunc(GL_GREATER);
-    glClearDepth(0.0);
+    glDepthFunc(GL_LESS);
+    glClearDepth(1.0);
     glClearColor(0.0, 0.0, 0.0, 0.0); // Set clear color to dark blue-gray
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -411,8 +430,10 @@ void Scene::render(float dt)
     float positiveAngle = sin(time) * (20.0f);
     float negativeAngle = sin(time) * (-20.0f);
 
+    glm::vec3 centerPoint(0.0f, 0.0f, 0.0f);
+
     Transform* totalTransform = new Transform();
-    totalTransform->rotate(glm::vec3(0.0, glm::radians(30.0f * time ),0));
+    //totalTransform->rotateAroundPoint(centerPoint, glm::angleAxis(glm::radians(rotationAngle), glm::vec3(0.0, 1.0, 0.0)));
     m_shader->setUniform("totalTransformMatrix",  totalTransform->getMatrix(), false);
 
     //render Head
@@ -496,6 +517,22 @@ void Scene::render(float dt)
     glBindVertexArray(vaoIDunderRightArm);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 
+    Transform* transformKeyA = new Transform();
+    transformKeyA ->translate(direction_A);
+    m_shader->setUniform("transformKeyA_Matrix", transformKeyA->getMatrix(), false);
+
+    Transform* transformKeyD = new Transform();
+    transformKeyD ->translate(direction_D);
+    m_shader->setUniform("transformKeyD_Matrix", transformKeyD->getMatrix(), false);
+
+    Transform* transformKeyW = new Transform();
+    transformKeyW ->translate(direction_W);
+    m_shader->setUniform("transformKeyW_Matrix", transformKeyW->getMatrix(), false);
+
+    Transform* transformKeyS = new Transform();
+    transformKeyS ->translate(direction_S);
+    m_shader->setUniform("transformKeyS_Matrix", transformKeyS->getMatrix(), false);
+
     time+=dt;
 
     //Color change per frame
@@ -511,7 +548,21 @@ void Scene::render(float dt)
 }
 void Scene::update(float dt)
 {
+    if (m_window->getInput().getKeyState(Key::A) == KeyState::Pressed) {
+        direction_A = direction_A + glm::vec3(-0.05, 0.0, 0.0);
+    }
+    if (m_window->getInput().getKeyState(Key::D) == KeyState::Pressed) {
+        direction_D = direction_D + glm::vec3(0.05, 0.0, 0.0);
+    }
+    if (m_window->getInput().getKeyState(Key::W) == KeyState::Pressed) {
+        direction_W = direction_W + glm::vec3(0.0, 0.0, -0.05);
+    }
+    if (m_window->getInput().getKeyState(Key::S) == KeyState::Pressed) {
+        direction_S = direction_S + glm::vec3(0.0, 0.0, 0.05);
+    }
 
+    MousePosition mouseMovement = m_window->getInput().getMousePosition();
+    onMouseMove(mouseMovement);
 }
 
 OpenGLWindow * Scene::getWindow()
@@ -526,7 +577,11 @@ void Scene::onKey(Key key, Action action, Modifier modifier)
 
 void Scene::onMouseMove(MousePosition mouseposition)
 {
-
+    float speed = -0.01f;
+    auto newPosition = glm::vec2(mouseposition.X, mouseposition.Y);
+    auto oldPosition = glm::vec2(mouseposition.oldX, mouseposition.oldY);
+    auto direction = (newPosition - oldPosition);
+    cameraPosition = cameraPosition + speed * glm::vec3(direction, 0);
 }
 
 void Scene::onMouseButton(MouseButton button, Action action, Modifier modifier)

@@ -436,7 +436,7 @@ void OBJLoader::recalculateNormals(OBJMesh & mesh)
 
 			glm::vec3 normal = glm::cross(edge1, edge2);
 
-			//for each Vertex all corresponing normals are added. The result is a non unit length vector wich is the average direction of all assigned normals.
+			//for each Vertex all corresponing normals are added. The result is a non unit length vector wich is the average direction_A of all assigned normals.
 			mesh.vertices[mesh.indices[i]].normal += normal;
 			mesh.vertices[mesh.indices[i + 1]].normal += normal;
 			mesh.vertices[mesh.indices[i + 2]].normal += normal;

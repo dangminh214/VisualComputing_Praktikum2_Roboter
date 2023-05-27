@@ -180,7 +180,7 @@ void Transform::lookinto(const glm::vec3 & direction)
 	glm::vec3 right = glm::normalize(glm::cross(glm::vec3(0.0f, 1.0f, 0.0f), ndir));
 	glm::vec3 up = glm::normalize(glm::cross(ndir, right));
 
-	//construct a 3x3 rotation matrix from direction and global up vector
+	//construct a 3x3 rotation matrix from direction_A and global up vector
 	glm::mat3 rot(right, up, ndir);
 
 	setRotation(glm::quat_cast(rot));
